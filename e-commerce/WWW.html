@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>MounUp</title>
+</head>
+<body>
+    <header>
+        <h1>MounUp</h1>
+        <nav>
+            <ul>
+                <li><a href="www.html">Beranda</a></li>
+                <li><a href="produk1.html">Produk</a></li>
+                <li><a href="keranjang.html">Keranjang</a></li>
+                <li><a href="kontak.html">kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="text-align: center;">Selamat datang</h1>
+    <p style="text-align: center;">Belanja perlengkapan outdoor di sini</p>
+
+    <style>
+        button {
+            padding: 8px 13px;
+            border-radius: 360px;
+            border: solid;
+            box-shadow: 4px 4px grey;;
+            justify-content: center;
+
+        }
+        button:hover {
+            box-shadow: o o;
+            transform: translate(3px, 3px);
+            transition: all 200ms ease;
+        } 
+        .Popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0, 5);
+            z-index: 1000;
+            /* FONT STYLING */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+    <div style="text-align: center;">
+        <button onclick="munculkanPopup()">Tentang kami</button>
+        <p style="text-align: center;">
+Selamat datang di Toko MounUp – Surga bagi Pecinta Alam!
+Di MounUp, kami memahami bahwa petualangan di luar ruangan adalah pengalaman yang tak ternilai. Kami menyediakan berbagai perlengkapan outdoor berkualitas tinggi untuk memenuhi semua kebutuhan petualangan Anda, mulai dari hiking, camping, hingga aktivitas air. 
+Temukan koleksi lengkap kami yang mencakup tenda yang tahan cuaca, sleeping bag yang nyaman, pakaian outdoor yang fungsional, serta peralatan mendaki yang aman dan terpercaya. Setiap produk yang kami tawarkan telah dipilih dengan cermat untuk memastikan Anda mendapatkan performa terbaik di alam bebas.
+Kami juga percaya bahwa setiap petualangan harus dilakukan dengan aman dan nyaman. Oleh karena itu, tim ahli kami siap memberikan saran dan rekomendasi yang tepat untuk membantu Anda memilih perlengkapan yang sesuai dengan kebutuhan dan gaya petualangan Anda.
+Bergabunglah dengan komunitas pecinta alam di MounUp dan nikmati pengalaman berbelanja yang menyenangkan. Dapatkan penawaran menarik dan diskon khusus untuk anggota. Mari kita jelajahi keindahan alam bersama!
+</p>
+        <script>
+            function munculkanPopup() {
+                alert("Tentang MounUp.");
+                alert("MounUp adalah toko perlengkapan outdoor terpercaya yang menyediakan berbagai kebutuhan mendaki, berkemah, dan petualangan lainya. Kami menyediakan produk berkualitas tinggi untuk menunjang aktivitas alam bebas anda!")
+            }
+        </script>
+    </div>
+    <div class="container">
+    <div class="content"></div>
+    <div class="text-background"></div>
+</div>
+
+    
+ <footer>
+        <p> Kontak: MounUp@gmail.com | 0888 9988 7777</p>
+    </footer>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-price"></p>
+            <button class="btn">Konfirmasi Pembelian</button>
+        </div>
+    </div>
+
+    <script src="produk.js"></script>
+
+</body>
+</html>
+

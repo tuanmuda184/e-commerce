@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>MounUp</title>
+</head>
+<body>
+    <header>
+        <h1>MounUp</h1>
+        <nav>
+            <ul>
+                <li><a href="www.html">Beranda</a></li>
+                <li><a href="produk1.html">Produk</a></li>
+                <li><a href="keranjang.html">Keranjang</a></li>
+                <li><a href="kontak.html">kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2 style="text-align: center;">Produk</h2>
+        <div class="product-list">
+
+            <div class="product">
+                <img src="Sepatu.jpg" alt="Produk 1">
+                <h3>sepatu</h3>
+                <p>Harga: Rp 2.000.000</p>
+                <p>kualitasnya yang tangguh dan dirancang untuk berbagai aktivitas luar ruangan, mulai dari hiking dan mendaki gunung hingga kegiatan sehari-hari.</p>
+                <button class="btn" onclick="showModal('sepatu', '2.000.000')">Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="Tenda.jpg " alt="Produk 2">
+                <h3>Tenda camping</h3>
+                <p>Harga: Rp 1.799.000</p>
+                <p>kualitasnya yang baik dan ketahanannya terhadap berbagai kondisi cuaca.</p>
+                <button class="btn" onclick="showModal('Tenda Camping', '1.799.000')">Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="Jaket.jpg" alt="Produk 3">
+                <h3>jaket outdoor</h3>
+                <p>Harga: Rp 599.000</p>
+                <p> produk pakaian luar ruangan yang diproduksi oleh Eiger Adventure, sebuah merek Indonesia yang dikenal dengan perlengkapan petualangan alam</p>
+                
+                <button class="btn" onclick="showModal('Jaket', 'Rp 599.000')">Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="Kompor.jpg" alt="Produk 4">
+                <h3>Kompor portabel</h3>
+                <p>Harga: Rp 250.000</p>
+                <p> kompor portabel yang dirancang untuk kegiatan di alam terbuka seperti berkemah, hiking, atau piknik.</p>
+                <button class="btn" onclick="showModal('Kompor portabel', 'Rp 250.000')">Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="TasCarrier.jpg" alt="Produk 5">
+                <h3>Carrier</h3>
+                <p>Harga: Rp 300.000</p>
+                <p>Tas yang cocok untuk mendaki, kualitas yang baik .</p>
+                <button class="btn" onclick="showModal('Carrier', 'Rp 300.000')">Beli Sekarang</button>
+            </div>
+        </div>
+    </main>         
+
+    <footer>
+        <p>Kontak: MounUp@gmail.com | 0888 9988 7777</p>
+    </footer>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-price"></p>
+            <button class="btn">Konfirmasi Pembelian</button>
+        </div>
+    </div>
+    <script src="produk.js"></script>
+</body>
+</html>
